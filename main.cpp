@@ -3213,6 +3213,32 @@ void display ()
     glVertex2f(465,140);
     glEnd();
     ///End 4th Building///
+	
+    ///Hospital signboard
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(464,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'H');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(469,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'O');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(473,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'S');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(477,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'P');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(481,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'I');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(485,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'T');
+     glColor3ub(0, 51, 204);
+    glRasterPos2i(489,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'A');
+    glColor3ub(0, 51, 204);
+    glRasterPos2i(494,455);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'L');
 
     glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 4th Building........2   ///
     glColor3ub(75,35,05);
