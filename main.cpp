@@ -14,7 +14,7 @@ void myInit ()
     glOrtho(0, 700, 0, 800, -10.0, 10.0);
 }
 
-void circle(GLfloat rx,GLfloat ry,GLfloat cx,GLfloat cy)///radius_x,radius_y,certre_position_x,centre_position_y///
+void circle(GLfloat rx,GLfloat ry,GLfloat cx,GLfloat cy)///radius_x,radius_y,centre_position_x,centre_position_y///
 {
     glBegin(GL_TRIANGLE_FAN);
     glVertex2f(cx,cy);
@@ -33,7 +33,7 @@ void circle(GLfloat rx,GLfloat ry,GLfloat cx,GLfloat cy)///radius_x,radius_y,cer
 float p = -10;
 int i= -700;
 float j= -250;
-float k= -50;
+float k= -100;
 
 void display ()
 {
@@ -546,7 +546,7 @@ void display ()
 
 
 
-    ///........AB 2 main part-1
+    ///...1st Building main part-1
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(50,90);
@@ -605,69 +605,69 @@ void display ()
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,90);  //1st Building 1st floor1
-    glVertex2f(280,90);
-    glVertex2f(280,145);
+    glVertex2f(197,90);
+    glVertex2f(197,145);
     glVertex2f(90,145);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,145);   //1st Building 2nd floor1
-    glVertex2f(280,145);
-    glVertex2f(280,200);
+    glVertex2f(197,145);
+    glVertex2f(197,200);
     glVertex2f(90,200);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,200);   //1st Building 3rd floor1
-    glVertex2f(280,200);
-    glVertex2f(280,255);
+    glVertex2f(197,200);
+    glVertex2f(197,255);
     glVertex2f(90,255);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,255);   //1st Building 4th floor1
-    glVertex2f(280,255);
-    glVertex2f(280,310);
+    glVertex2f(197,255);
+    glVertex2f(197,310);
     glVertex2f(90,310);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,310);   //1st Building 5th floor1
-    glVertex2f(280,310);
-    glVertex2f(280,365);
+    glVertex2f(197,310);
+    glVertex2f(197,365);
     glVertex2f(90,365);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,365);   //1st Building 6th floor1
-    glVertex2f(280,365);
-    glVertex2f(280,420);
+    glVertex2f(197,365);
+    glVertex2f(197,420);
     glVertex2f(90,420);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
     glVertex2f(90,420);   //1st Building 7th floor1
-    glVertex2f(280,420);
-    glVertex2f(280,475);
+    glVertex2f(197,420);
+    glVertex2f(197,475);
     glVertex2f(90,475);
     glEnd();
 
 
 
     glColor3ub(0, 51, 204);
-    glRasterPos2i(183,465);
+    glRasterPos2i(133,465);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'D');
     glColor3ub(115, 115, 115);
-    glRasterPos2i(189,465);
+    glRasterPos2i(139,465);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'I');
     glColor3ub(0, 102, 34);
-    glRasterPos2i(193,465);
+    glRasterPos2i(143,465);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'U');
 
 
@@ -718,57 +718,57 @@ void display ()
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(110,420);   //part 2 1st Building 7th floor2
-    glVertex2f(277,420);
-    glVertex2f(277,460);
+    glVertex2f(110,420);   //part 2 1st Building 7th floor2 white
+    glVertex2f(194,420);
+    glVertex2f(194,460);
     glVertex2f(110,460);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,365);   //part 2 1st Building 6th floor2
-    glVertex2f(277,365);
-    glVertex2f(277,405);
+    glVertex2f(194,365);
+    glVertex2f(194,405);
     glVertex2f(140,405);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,310);   //part 2 1st Building 5th floor2
-    glVertex2f(277,310);
-    glVertex2f(277,350);
+    glVertex2f(194,310);
+    glVertex2f(194,350);
     glVertex2f(140,350);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,255);   //part 2 1st Building 4th floor2
-    glVertex2f(277,255);
-    glVertex2f(277,295);
+    glVertex2f(194,255);
+    glVertex2f(194,295);
     glVertex2f(140,295);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,200);   //part 2 1st Building 3rd floor2
-    glVertex2f(277,200);
-    glVertex2f(277,240);
+    glVertex2f(194,200);
+    glVertex2f(194,240);
     glVertex2f(140,240);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,145);   //part 2 1st Building 2nd floor2
-    glVertex2f(277,145);
-    glVertex2f(277,185);
+    glVertex2f(194,145);
+    glVertex2f(194,185);
     glVertex2f(140,185);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
     glVertex2f(140,90);  //part 2 1st Building 1st floor2
-    glVertex2f(277,90);
-    glVertex2f(277,130);
+    glVertex2f(194,90);
+    glVertex2f(194,130);
     glVertex2f(140,130);
     glEnd();
 
@@ -959,7 +959,7 @@ void display ()
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(50,240);  //4 v main part3
+    glVertex2f(50,240);  //4  main part3
     glVertex2f(110,240);
     glVertex2f(110,241);
     glVertex2f(50,241);
@@ -1098,13 +1098,6 @@ void display ()
     glVertex2f(191,455);
     glVertex2f(113,455);
     glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,425);   //part 2 1st Building 7th floor2
-    glVertex2f(274,425);
-    glVertex2f(274,455);
-    glVertex2f(196,455);
-    glEnd();
 
     //....door.....window
     glBegin(GL_QUADS);
@@ -1120,20 +1113,6 @@ void display ()
     glVertex2f(119,430);
     glVertex2f(119,445);
     glVertex2f(118,445);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,420);   //d2 1st Building 7th floor2
-    glVertex2f(206,420);
-    glVertex2f(206,455);
-    glVertex2f(196,455);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,430);   //d2 1st Building 7th floor2
-    glVertex2f(202,430);
-    glVertex2f(202,445);
-    glVertex2f(201,445);
     glEnd();
 
     glBegin(GL_QUADS);
@@ -1182,49 +1161,6 @@ void display ()
     glVertex2f(173,448);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,432);   //w3 1st Building 7th floor2
-    glVertex2f(235,432);
-    glVertex2f(235,448);
-    glVertex2f(215,448);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,433);   //w3 1st Building 7th floor2
-    glVertex2f(234.5,433);
-    glVertex2f(234.5,447);
-    glVertex2f(215.5,447);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,432);   //w3 1st Building 7th floor2
-    glVertex2f(226,432);
-    glVertex2f(226,448);
-    glVertex2f(225,448);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,432);   //w4 1st Building 7th floor2
-    glVertex2f(265,432);
-    glVertex2f(265,448);
-    glVertex2f(245,448);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,433);   //w4 1st Building 7th floor2
-    glVertex2f(264.5,433);
-    glVertex2f(264.5,447);
-    glVertex2f(245.5,447);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,432);   //w4 v 7th floor2
-    glVertex2f(256,432);
-    glVertex2f(256,448);
-    glVertex2f(255,448);
-    glEnd();
 
     //....6th Floor Design..........Door window
 
@@ -1234,29 +1170,6 @@ void display ()
     glVertex2f(191,370);
     glVertex2f(191,400);
     glVertex2f(141,400);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,370);   //part 2 1st Building 6th floor2
-    glVertex2f(274,370);
-    glVertex2f(274,400);
-    glVertex2f(196,400);
-    glEnd();
-
-
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,365);   //d2 1st Building 6th floor2
-    glVertex2f(206,365);
-    glVertex2f(206,400);
-    glVertex2f(196,400);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,375);   //d2 1st Building 6th floor2
-    glVertex2f(202,375);
-    glVertex2f(202,390);
-    glVertex2f(201,390);
     glEnd();
 
     glBegin(GL_QUADS);
@@ -1304,51 +1217,6 @@ void display ()
     glVertex2f(173,393);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,377);   //w3 1st Building 6th floor2
-    glVertex2f(235,377);
-    glVertex2f(235,393);
-    glVertex2f(215,393);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,378);   //w3 1st Building 6th floor2
-    glVertex2f(234.5,378);
-    glVertex2f(234.5,392);
-    glVertex2f(215.5,392);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,377);   //w3 1st Building 6th floor2
-    glVertex2f(226,377);
-    glVertex2f(226,393);
-    glVertex2f(225,393);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,377);   //w4 1st Building 6th floor2
-    glVertex2f(265,377);
-    glVertex2f(265,393);
-    glVertex2f(245,393);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,378);   //w4 1st Building 6th floor2
-    glVertex2f(264.5,378);
-    glVertex2f(264.5,392);
-    glVertex2f(245.5,392);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,377);   //w4 1st Building 6th floor2
-    glVertex2f(256,377);
-    glVertex2f(256,393);
-    glVertex2f(255,393);
-    glEnd();
-
-
 
     ///5th floor......design
 
@@ -1360,32 +1228,8 @@ void display ()
     glVertex2f(141,345);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,315);   //part 2 1st Building 5th floor2
-    glVertex2f(274,315);
-    glVertex2f(274,345);
-    glVertex2f(196,345);
-    glEnd();
 
     ///....door.....window
-
-
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,310);   //d2 1st Building 5th floor
-    glVertex2f(206,310);
-    glVertex2f(206,345);
-    glVertex2f(196,345);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,320);   //d2 1st Building 5th floor
-    glVertex2f(202,320);
-    glVertex2f(202,335);
-    glVertex2f(201,335);
-    glEnd();
-
 
 
     glBegin(GL_QUADS);
@@ -1434,51 +1278,6 @@ void display ()
     glVertex2f(173,338);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,322);   //w3 1st Building 5th floor2
-    glVertex2f(235,322);
-    glVertex2f(235,338);
-    glVertex2f(215,338);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,323);   //w3 1st Building 5th floor2
-    glVertex2f(234.5,323);
-    glVertex2f(234.5,337);
-    glVertex2f(215.5,337);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,323);   //w3 1st Building 5th floor2
-    glVertex2f(226,323);
-    glVertex2f(226,338);
-    glVertex2f(225,338);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,322);   //w4 1st Building 5th floor2
-    glVertex2f(265,322);
-    glVertex2f(265,338);
-    glVertex2f(245,338);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,323);   //w4 1st Building 5th floor2
-    glVertex2f(264.5,323);
-    glVertex2f(264.5,337);
-    glVertex2f(245.5,337);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,322);   //w4 1st Building 5th floor2
-    glVertex2f(256,322);
-    glVertex2f(256,338);
-    glVertex2f(255,338);
-    glEnd();
-
-
 
     ///....4TH floor design............
 
@@ -1490,31 +1289,8 @@ void display ()
     glVertex2f(141,290);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,260);   //part 2 1st Building 4th floor.......red
-    glVertex2f(274,260);
-    glVertex2f(274,290);
-    glVertex2f(196,290);
-    glEnd();
-
 
     ///....door.....window
-
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,255);   //d2 1st Building 4th floor
-    glVertex2f(206,255);
-    glVertex2f(206,290);
-    glVertex2f(196,290);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,265);   //d2 1st Building 4th floor
-    glVertex2f(202,265);
-    glVertex2f(202,280);
-    glVertex2f(201,280);
-    glEnd();
 
 
     glBegin(GL_QUADS);
@@ -1563,51 +1339,6 @@ void display ()
     glVertex2f(173,283);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,267);   //w3 1st Building 4th floor2
-    glVertex2f(235,267);
-    glVertex2f(235,283);
-    glVertex2f(215,283);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,268);   //w3 1st Building 4th floor2
-    glVertex2f(234.5,268);
-    glVertex2f(234.5,282);
-    glVertex2f(215.5,282);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,267);   //w3 1st Building 4th floor2
-    glVertex2f(226,267);
-    glVertex2f(226,283);
-    glVertex2f(225,283);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,267);   //w4 1st Building 4th floor2
-    glVertex2f(265,267);
-    glVertex2f(265,283);
-    glVertex2f(245,283);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,268);   //w4 1st Building 4th floor2
-    glVertex2f(264.5,268);
-    glVertex2f(264.5,282);
-    glVertex2f(245.5,282);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,267);   //w4 1st Building 4th floor2
-    glVertex2f(256,267);
-    glVertex2f(256,283);
-    glVertex2f(255,283);
-    glEnd();
-
-
 
     ///....3TH floor design............
 
@@ -1619,31 +1350,8 @@ void display ()
     glVertex2f(141,235);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,205);   //part 2 1st Building 3th floor.......red
-    glVertex2f(274,205);
-    glVertex2f(274,235);
-    glVertex2f(196,235);
-    glEnd();
-
-
     ///....door.....window
 
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,200);   //d2 1st Building 3rd floor
-    glVertex2f(206,200);
-    glVertex2f(206,235);
-    glVertex2f(196,235);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,210);   //d2 1st Building 3rd floor
-    glVertex2f(202,210);
-    glVertex2f(202,225);
-    glVertex2f(201,225);
-    glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
@@ -1691,51 +1399,6 @@ void display ()
     glVertex2f(173,228);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,212);   //w3 1st Building 3rd floor2
-    glVertex2f(235,212);
-    glVertex2f(235,228);
-    glVertex2f(215,228);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,213);   //w3 1st Building 3rd floor2
-    glVertex2f(234.5,213);
-    glVertex2f(234.5,227);
-    glVertex2f(215.5,227);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,212);   //w3 1st Building 3rd floor2
-    glVertex2f(226,212);
-    glVertex2f(226,228);
-    glVertex2f(225,228);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,212);   //w4 1st Building 3rd floor2
-    glVertex2f(265,212);
-    glVertex2f(265,228);
-    glVertex2f(245,228);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,213);   //w4 1st Building 3rd floor2
-    glVertex2f(264.5,213);
-    glVertex2f(264.5,227);
-    glVertex2f(245.5,227);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,212);   //w4 1st Building 3rd floor2
-    glVertex2f(256,212);
-    glVertex2f(256,228);
-    glVertex2f(255,228);
-    glEnd();
-
-
 
     ///....2nd floor design............
 
@@ -1747,32 +1410,8 @@ void display ()
     glVertex2f(141,180);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,150);   //part 2 1st Building 2nd floor.......red
-    glVertex2f(274,150);
-    glVertex2f(274,180);
-    glVertex2f(196,180);
-    glEnd();
-
 
     ///....door.....window
-
-    glBegin(GL_QUADS);
-    glColor3ub(123, 88, 71);
-    glVertex2f(196,145);   //d2 1st Building 2nd floor
-    glVertex2f(206,145);
-    glVertex2f(206,180);
-    glVertex2f(196,180);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);
-    glVertex2f(201,155);   //d2 1st Building 2nd floor
-    glVertex2f(202,155);
-    glVertex2f(202,170);
-    glVertex2f(201,170);
-    glEnd();
-
 
 
     glBegin(GL_QUADS);
@@ -1821,51 +1460,6 @@ void display ()
     glVertex2f(173,173);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,157);   //w3 1st Building 2nd floor2
-    glVertex2f(235,157);
-    glVertex2f(235,173);
-    glVertex2f(215,173);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,158);   //w3 1st Building 2nd floor2
-    glVertex2f(234.5,158);
-    glVertex2f(234.5,172);
-    glVertex2f(215.5,172);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,157);   //w3 1st Building 2nd floor2
-    glVertex2f(226,157);
-    glVertex2f(226,173);
-    glVertex2f(225,173);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,157);   //w4 1st Building 2nd floor2
-    glVertex2f(265,157);
-    glVertex2f(265,173);
-    glVertex2f(245,173);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,158);   //w4 1st Building 2nd floor2
-    glVertex2f(264.5,158);
-    glVertex2f(264.5,172);
-    glVertex2f(245.5,172);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,157);   //w4 1st Building 2nd floor2
-    glVertex2f(256,157);
-    glVertex2f(256,173);
-    glVertex2f(255,173);
-    glEnd();
-
-
 
     ///....1st floor design............
 
@@ -1875,14 +1469,6 @@ void display ()
     glVertex2f(191,95);
     glVertex2f(191,125);
     glVertex2f(141,125);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(177,124,119);
-    glVertex2f(196,95);   //part 2 1st Building 1st floor.......red
-    glVertex2f(274,95);
-    glVertex2f(274,125);
-    glVertex2f(196,125);
     glEnd();
 
 
@@ -1949,512 +1535,468 @@ void display ()
     glVertex2f(173,118);
     glEnd();
 
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(215,102);   //w3 1st Building 1st floor2
-    glVertex2f(235,102);
-    glVertex2f(235,118);
-    glVertex2f(215,118);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(215.5,103);   //w3 1st Building 1st floor2
-    glVertex2f(234.5,103);
-    glVertex2f(234.5,117);
-    glVertex2f(215.5,117);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(225,102);   //w3 1st Building 1st floor2
-    glVertex2f(226,102);
-    glVertex2f(226,118);
-    glVertex2f(225,118);
-    glEnd();
-
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(245,102);   //w4 1st Building 1st floor2
-    glVertex2f(265,102);
-    glVertex2f(265,118);
-    glVertex2f(245,118);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(143,175,175);
-    glVertex2f(245.5,103);   //w4 1st Building 1st floor2
-    glVertex2f(264.5,103);
-    glVertex2f(264.5,117);
-    glVertex2f(245.5,117);
-    glEnd();
-    glBegin(GL_QUADS);
-    glColor3ub(255,255,255);
-    glVertex2f(255,102);   //w4 1st Building 1st floor2
-    glVertex2f(256,102);
-    glVertex2f(256,118);
-    glVertex2f(255,118);
-    glEnd();
-
     /////////////////
-    ///........2nd building main part/////
+    ///2nd building main part/////
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(300,120);
-    glVertex2f(397,120);
-    glVertex2f(397,395);
-    glVertex2f(300,395);
+    glVertex2f(200,120);
+    glVertex2f(287,120);
+    glVertex2f(287,395);
+    glVertex2f(200,395);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(302.5,120);        //2nd building main part 2
-    glVertex2f(394,120);
-    glVertex2f(394,380);
-    glVertex2f(302.5,380);
+    glVertex2f(202.5,120);        //2nd building main part 2
+    glVertex2f(284,120);
+    glVertex2f(284,380);
+    glVertex2f(202.5,380);
     glEnd();
 
    ///....1st floor design............
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(305,125);   //part 2 2nd building 1st floor red.........
-    glVertex2f(391,125);
-    glVertex2f(391,155);
-    glVertex2f(305,155);
+    glVertex2f(205,125);   //part 2 2nd building 1st floor red.........
+    glVertex2f(281,125);
+    glVertex2f(281,155);
+    glVertex2f(205,155);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(391,125);   //part 2 2nd building 1st floor.......red
-    glVertex2f(374,125);
-    glVertex2f(374,155);
-    glVertex2f(391,155);
+    glVertex2f(281,125);   //part 2 2nd building 1st floor.......red
+    glVertex2f(267,125);
+    glVertex2f(267,155);
+    glVertex2f(281,155);
     glEnd();
 
     //Door and window
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(305,120);   //d2 2nd building 1st floor
-    glVertex2f(315,120);
-    glVertex2f(315,155);
-    glVertex2f(305,155);
+    glVertex2f(205,120);   //d2 2nd building 1st floor
+    glVertex2f(215,120);
+    glVertex2f(215,155);
+    glVertex2f(205,155);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(309,132);   //d2 2nd building 1st floor
-    glVertex2f(310,132);
-    glVertex2f(310,147);
-    glVertex2f(309,147);
+    glVertex2f(209,132);   //d2 2nd building 1st floor
+    glVertex2f(210,132);
+    glVertex2f(210,147);
+    glVertex2f(209,147);
     glEnd();
 
         glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(328,131);   //w1 2nd building 1st floor2
-    glVertex2f(348,131);
-    glVertex2f(348,147);
-    glVertex2f(328,147);
+    glVertex2f(223,131);   //w1 2nd building 1st floor2
+    glVertex2f(243,131);
+    glVertex2f(243,147);
+    glVertex2f(223,147);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(328.5,132);   //w1 2nd building 1st floor2
-    glVertex2f(347.5,132);
-    glVertex2f(347.5,146);
-    glVertex2f(328.5,146);
+    glVertex2f(223.5,132);   //w1 2nd building 1st floor2
+    glVertex2f(242.5,132);
+    glVertex2f(242.5,146);
+    glVertex2f(223.5,146);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(338,131);   //w1 2nd building 1st floor2
-    glVertex2f(339,131);
-    glVertex2f(339,147);
-    glVertex2f(338,147);
+    glVertex2f(233.1,131);   //w1 2nd building 1st floor2
+    glVertex2f(234,131);
+    glVertex2f(234,147);
+    glVertex2f(233.1,147);
     glEnd();
 
      glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(363,131);   //w2 2nd building 1st floor2
-    glVertex2f(383,131);
-    glVertex2f(383,147);
-    glVertex2f(363,147);
+    glVertex2f(253,131);   //w2 2nd building 1st floor2
+    glVertex2f(273,131);
+    glVertex2f(273,147);
+    glVertex2f(253,147);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(363.5,132);   //w2 2nd building 1st floor2
-    glVertex2f(382.5,132);
-    glVertex2f(382.5,146);
-    glVertex2f(363.5,146);
+    glVertex2f(253.5,132);   //w2 2nd building 1st floor2
+    glVertex2f(272.5,132);
+    glVertex2f(272.5,146);
+    glVertex2f(253.5,146);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(373,131);   //w2 2nd building 1st floor2
-    glVertex2f(374,131);
-    glVertex2f(374,147);
-    glVertex2f(373,147);
+    glVertex2f(263.1,131);   //w2 2nd building 1st floor2
+    glVertex2f(264,131);
+    glVertex2f(264,147);
+    glVertex2f(263.1,147);
     glEnd();
 
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(302.5,160);  //2nd building 1st floor1
-    glVertex2f(394,160);
-    glVertex2f(394,175);
-    glVertex2f(302.5,175);
+    glVertex2f(202.5,160);  //2nd building 1st floor1
+    glVertex2f(284,160);
+    glVertex2f(284,175);
+    glVertex2f(202.5,175);
     glEnd();
 
        ///....2nd floor design............///y+55 korchi
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(305,180);   //part 2 2nd building 2nd floor red.........
-    glVertex2f(391,180);
-    glVertex2f(391,210);
-    glVertex2f(305,210);
+    glVertex2f(205,180);   //part 2 2nd building 2nd floor red.........
+    glVertex2f(281,180);
+    glVertex2f(281,210);
+    glVertex2f(205,210);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(391,180);   //part 2 2nd building 2nd floor.......red
-    glVertex2f(374,180);
-    glVertex2f(374,210);
-    glVertex2f(391,210);
+    glVertex2f(281,180);   //part 2 2nd building 2nd floor.......red
+    glVertex2f(264,180);
+    glVertex2f(264,210);
+    glVertex2f(281,210);
     glEnd();
 
     //Door and window
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(305,175);   //d2 2nd building 2nd floor
-    glVertex2f(315,175);
-    glVertex2f(315,210);
-    glVertex2f(305,210);
+    glVertex2f(205,175);   //d2 2nd building 2nd floor
+    glVertex2f(215,175);
+    glVertex2f(215,210);
+    glVertex2f(205,210);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(309,187);   //d2 2nd building 2nd floor
-    glVertex2f(310,187);
-    glVertex2f(310,202);
-    glVertex2f(309,202);
+    glVertex2f(209,187);   //d2 2nd building 2nd floor
+    glVertex2f(210,187);
+    glVertex2f(210,202);
+    glVertex2f(209,202);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(328,186);   //w1 2nd building 2nd floor2
-    glVertex2f(348,186);
-    glVertex2f(348,202);
-    glVertex2f(328,202);
+    glVertex2f(223,186);   //w1 2nd building 2nd floor2
+    glVertex2f(243,186);
+    glVertex2f(243,202);
+    glVertex2f(223,202);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(328.5,187);   //w1 2nd building 2nd floor2
-    glVertex2f(347.5,187);
-    glVertex2f(347.5,201);
-    glVertex2f(328.5,201);
+    glVertex2f(223.5,187);   //w1 2nd building 2nd floor2
+    glVertex2f(242.5,187);
+    glVertex2f(242.5,201);
+    glVertex2f(223.5,201);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(338,186);   //w1 2nd building 2nd floor2
-    glVertex2f(339,186);
-    glVertex2f(339,202);
-    glVertex2f(338,202);
+    glVertex2f(233.1,186);   //w1 2nd building 2nd floor2
+    glVertex2f(234,186);
+    glVertex2f(234,202);
+    glVertex2f(233.1,202);
     glEnd();
 
      glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(363,186);   //w2 2nd building 2nd floor2
-    glVertex2f(383,186);
-    glVertex2f(383,202);
-    glVertex2f(363,202);
+    glVertex2f(253,186);   //w2 2nd building 2nd floor2
+    glVertex2f(273,186);
+    glVertex2f(273,202);
+    glVertex2f(253,202);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(363.5,187);   //w2 2nd building 2nd floor2
-    glVertex2f(382.5,187);
-    glVertex2f(382.5,201);
-    glVertex2f(363.5,201);
+    glVertex2f(253.5,187);   //w2 2nd building 2nd floor2
+    glVertex2f(272.5,187);
+    glVertex2f(272.5,201);
+    glVertex2f(253.5,201);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(373,186);   //w2 2nd building 2nd floor2
-    glVertex2f(374,186);
-    glVertex2f(374,202);
-    glVertex2f(373,202);
+    glVertex2f(263.1,186);   //w2 2nd building 2nd floor2
+    glVertex2f(264,186);
+    glVertex2f(264,202);
+    glVertex2f(263.1,202);
     glEnd();
 
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(302.5,215);  //2nd building 2nd floor1
-    glVertex2f(394,215);
-    glVertex2f(394,230);
-    glVertex2f(302.5,230);
+    glVertex2f(202.5,215);  //2nd building 2nd floor1
+    glVertex2f(284,215);
+    glVertex2f(284,230);
+    glVertex2f(202.5,230);
     glEnd();
 
     ///....3rd floor design............///y+55 korchi
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(305,235);   //part 2 2nd building 3rd floor red.........
-    glVertex2f(391,235);
-    glVertex2f(391,265);
-    glVertex2f(305,265);
+    glVertex2f(205,235);   //part 2 2nd building 3rd floor red.........
+    glVertex2f(281,235);
+    glVertex2f(281,265);
+    glVertex2f(205,265);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(391,235);   //part 2 2nd building 3rd floor.......red
-    glVertex2f(374,235);
-    glVertex2f(374,265);
-    glVertex2f(391,265);
+    glVertex2f(281,235);   //part 2 2nd building 3rd floor.......red
+    glVertex2f(264,235);
+    glVertex2f(264,265);
+    glVertex2f(281,265);
     glEnd();
 
     //Door and window
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(305,230);   //d2 2nd building 3rd floor
-    glVertex2f(315,230);
-    glVertex2f(315,265);
-    glVertex2f(305,265);
+    glVertex2f(205,230);   //d2 2nd building 3rd floor
+    glVertex2f(215,230);
+    glVertex2f(215,265);
+    glVertex2f(205,265);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(309,242);   //d2 2nd building 2nd floor
-    glVertex2f(310,242);
-    glVertex2f(310,257);
-    glVertex2f(309,257);
+    glVertex2f(209,242);   //d2 2nd building 2nd floor
+    glVertex2f(210,242);
+    glVertex2f(210,257);
+    glVertex2f(209,257);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(328,241);   //w1 2nd building 3rd floor2
-    glVertex2f(348,241);
-    glVertex2f(348,257);
-    glVertex2f(328,257);
+    glVertex2f(223,241);   //w1 2nd building 3rd floor2
+    glVertex2f(243,241);
+    glVertex2f(243,257);
+    glVertex2f(223,257);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(328.5,242);   //w1 2nd building 2nd floor2
-    glVertex2f(347.5,242);
-    glVertex2f(347.5,256);
-    glVertex2f(328.5,256);
+    glVertex2f(223.5,242);   //w1 2nd building 2nd floor2
+    glVertex2f(242.5,242);
+    glVertex2f(242.5,256);
+    glVertex2f(223.5,256);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(338,241);   //w1 2nd building 3rd floor2
-    glVertex2f(339,241);
-    glVertex2f(339,257);
-    glVertex2f(338,257);
+    glVertex2f(233.1,241);   //w1 2nd building 3rd floor2
+    glVertex2f(234,241);
+    glVertex2f(234,257);
+    glVertex2f(233.1,257);
     glEnd();
 
      glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(363,241);   //w2 2nd building 3rd floor2
-    glVertex2f(383,241);
-    glVertex2f(383,257);
-    glVertex2f(363,257);
+    glVertex2f(253,241);   //w2 2nd building 3rd floor2
+    glVertex2f(273,241);
+    glVertex2f(273,257);
+    glVertex2f(253,257);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(363.5,242);   //w2 2nd building 3rd floor2
-    glVertex2f(382.5,242);
-    glVertex2f(382.5,256);
-    glVertex2f(363.5,256);
+    glVertex2f(253.5,242);   //w2 2nd building 3rd floor2
+    glVertex2f(272.5,242);
+    glVertex2f(272.5,256);
+    glVertex2f(253.5,256);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(373,241);   //w2 2nd building 3rd floor2
-    glVertex2f(374,241);
-    glVertex2f(374,257);
-    glVertex2f(373,257);
+    glVertex2f(263.1,241);   //w2 2nd building 3rd floor2
+    glVertex2f(264,241);
+    glVertex2f(264,257);
+    glVertex2f(263.1,257);
     glEnd();
 
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(302.5,270);  //2nd building 3rd floor1
-    glVertex2f(394,270);
-    glVertex2f(394,285);
-    glVertex2f(302.5,285);
+    glVertex2f(202.5,270);  //2nd building 3rd floor1
+    glVertex2f(284,270);
+    glVertex2f(284,285);
+    glVertex2f(202.5,285);
     glEnd();
 
     ///....4th floor design............///y+55 korchi
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(305,290);   //part 2 2nd building 4th floor red.........
-    glVertex2f(391,290);
-    glVertex2f(391,320);
-    glVertex2f(305,320);
+    glVertex2f(205,290);   //part 2 2nd building 4th floor red.........
+    glVertex2f(281,290);
+    glVertex2f(281,320);
+    glVertex2f(205,320);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(391,290);   //part 2 2nd building 4th floor.......red
-    glVertex2f(374,290);
-    glVertex2f(374,320);
-    glVertex2f(391,320);
+    glVertex2f(281,290);   //part 2 2nd building 4th floor.......red
+    glVertex2f(264,290);
+    glVertex2f(264,320);
+    glVertex2f(281,320);
     glEnd();
 
     //Door and window
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(305,285);   //d2 2nd building 4th floor
-    glVertex2f(315,285);
-    glVertex2f(315,320);
-    glVertex2f(305,320);
+    glVertex2f(205,285);   //d2 2nd building 4th floor
+    glVertex2f(215,285);
+    glVertex2f(215,320);
+    glVertex2f(205,320);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(309,297);   //d2 2nd building 5th floor
-    glVertex2f(310,297);
-    glVertex2f(310,312);
-    glVertex2f(309,312);
+    glVertex2f(209,297);   //d2 2nd building 5th floor
+    glVertex2f(210,297);
+    glVertex2f(210,312);
+    glVertex2f(209,312);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(328,296);   //w1 2nd building 4th floor2
-    glVertex2f(348,296);
-    glVertex2f(348,312);
-    glVertex2f(328,312);
+    glVertex2f(223,296);   //w1 2nd building 4th floor2
+    glVertex2f(243,296);
+    glVertex2f(243,312);
+    glVertex2f(223,312);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(328.5,297);   //w1 2nd building 4th floor2
-    glVertex2f(347.5,297);
-    glVertex2f(347.5,311);
-    glVertex2f(328.5,311);
+    glVertex2f(223.5,297);   //w1 2nd building 4th floor2
+    glVertex2f(242.5,297);
+    glVertex2f(242.5,311);
+    glVertex2f(223.5,311);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(338,296);   //w1 2nd building 4th floor2
-    glVertex2f(339,296);
-    glVertex2f(339,312);
-    glVertex2f(338,312);
+    glVertex2f(233.1,296);   //w1 2nd building 4th floor2
+    glVertex2f(234,296);
+    glVertex2f(234,312);
+    glVertex2f(233.1,312);
     glEnd();
 
      glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(363,297);   //w2 2nd building 4th floor2
-    glVertex2f(383,297);
-    glVertex2f(383,312);
-    glVertex2f(363,312);
+    glVertex2f(253,297);   //w2 2nd building 4th floor2
+    glVertex2f(273,297);
+    glVertex2f(273,312);
+    glVertex2f(253,312);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(363.5,297);   //w2 2nd building 4th floor2
-    glVertex2f(382.5,297);
-    glVertex2f(382.5,311);
-    glVertex2f(363.5,311);
+    glVertex2f(253.5,297);   //w2 2nd building 4th floor2
+    glVertex2f(272.5,297);
+    glVertex2f(272.5,311);
+    glVertex2f(253.5,311);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(373,297);   //w2 2nd building 4th floor2
-    glVertex2f(374,297);
-    glVertex2f(374,312);
-    glVertex2f(373,312);
+    glVertex2f(263.1,297);   //w2 2nd building 4th floor2
+    glVertex2f(264,297);
+    glVertex2f(264,312);
+    glVertex2f(263.1,312);
     glEnd();
 
      //floor divided
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(302.5,325);  //2nd building 4th floor1
-    glVertex2f(394,325);
-    glVertex2f(394,340);
-    glVertex2f(302.5,340);
+    glVertex2f(202.5,325);  //2nd building 4th floor1
+    glVertex2f(284,325);
+    glVertex2f(284,340);
+    glVertex2f(202.5,340);
     glEnd();
 
     ///....5th floor design............///y+55 korchi
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(305,345);   //part 2 2nd building 5th floor red.........
-    glVertex2f(391,345);
-    glVertex2f(391,375);
-    glVertex2f(305,375);
+    glVertex2f(205,345);   //part 2 2nd building 5th floor red.........
+    glVertex2f(281,345);
+    glVertex2f(281,375);
+    glVertex2f(205,375);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(391,345);   //part 2 2nd building 5th floor.......red
-    glVertex2f(374,345);
-    glVertex2f(374,375);
-    glVertex2f(391,375);
+    glVertex2f(281,345);   //part 2 2nd building 5th floor.......red
+    glVertex2f(264,345);
+    glVertex2f(264,375);
+    glVertex2f(281,375);
     glEnd();
 
     //Door and window
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(305,340);   //d2 2nd building 5th floor
-    glVertex2f(315,340);
-    glVertex2f(315,375);
-    glVertex2f(305,375);
+    glVertex2f(205,340);   //d2 2nd building 5th floor
+    glVertex2f(215,340);
+    glVertex2f(215,375);
+    glVertex2f(205,375);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(309,352);   //d2 2nd building 5th floor
-    glVertex2f(310,352);
-    glVertex2f(310,367);
-    glVertex2f(309,367);
+    glVertex2f(209,352);   //d2 2nd building 5th floor
+    glVertex2f(210,352);
+    glVertex2f(210,367);
+    glVertex2f(209,367);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(328,351);   //w1 2nd building 5th floor2
-    glVertex2f(348,351);
-    glVertex2f(348,367);
-    glVertex2f(328,367);
+    glVertex2f(223,351);   //w1 2nd building 5th floor2
+    glVertex2f(243,351);
+    glVertex2f(243,367);
+    glVertex2f(223,367);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(328.5,352);   //w1 2nd building 5th floor2
-    glVertex2f(347.5,352);
-    glVertex2f(347.5,366);
-    glVertex2f(328.5,366);
+    glVertex2f(223.5,352);   //w1 2nd building 5th floor2
+    glVertex2f(242.5,352);
+    glVertex2f(242.5,366);
+    glVertex2f(223.5,366);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(338,351);   //w1 2nd building 5th floor2
-    glVertex2f(339,351);
-    glVertex2f(339,367);
-    glVertex2f(338,367);
+    glVertex2f(233.1,351);   //w1 2nd building 5th floor2
+    glVertex2f(234,351);
+    glVertex2f(234,367);
+    glVertex2f(233.1,367);
     glEnd();
 
      glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(363,352);   //w2 2nd building 4th floor2
-    glVertex2f(383,352);
-    glVertex2f(383,367);
-    glVertex2f(363,367);
+    glVertex2f(253,352);   //w2 2nd building 4th floor2
+    glVertex2f(273,352);
+    glVertex2f(273,367);
+    glVertex2f(253,367);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(128,197,215);
-    glVertex2f(363.5,352);   //w2 2nd building 5th floor2
-    glVertex2f(382.5,352);
-    glVertex2f(382.5,366);
-    glVertex2f(363.5,366);
+    glVertex2f(253.5,352);   //w2 2nd building 5th floor2
+    glVertex2f(272.5,352);
+    glVertex2f(272.5,366);
+    glVertex2f(253.5,366);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255,255,255);
-    glVertex2f(373,352);   //w2 2nd building 5th floor2
-    glVertex2f(374,352);
-    glVertex2f(374,367);
-    glVertex2f(373,367);
+    glVertex2f(263.1,352);   //w2 2nd building 5th floor2
+    glVertex2f(264,352);
+    glVertex2f(264,367);
+    glVertex2f(263.1,367);
     glEnd();
     ///End 2nd building//
 
     ///Tower 2nd Building//
     glBegin(GL_QUADS);
     glColor3ub(140, 140, 140);
-    glVertex2f(373,395);
-    glVertex2f(374,395);
-    glVertex2f(374,520);
-    glVertex2f(373,520);
+    glVertex2f(273,395);
+    glVertex2f(274,395);
+    glVertex2f(274,520);
+    glVertex2f(273,520);
     glEnd();
 
     glColor3ub(102, 102, 102);
-    circle(3,6,373,500);
+    circle(3,6,273,500);
     glColor3ub(217, 217, 217);
-    circle(2.5,5,373,500);
+    circle(2.5,5,273,500);
     glColor3ub(102, 102, 102);
-    circle(2,4,376,485);
+    circle(2,4,276,485);
     glColor3ub(217, 217, 217);
-    circle(1.5,3,376,485);
+    circle(1.5,3,276,485);
     //Tower End//
 
     glBegin(GL_TRIANGLE_FAN); ///triangle tree 2nd Building///
@@ -2522,510 +2064,418 @@ void display ()
     glVertex2f(292.5,270);
     glEnd();
 
-    ///....circle tree.........2nd Building........6 ///
-    glColor3ub(139, 146, 22);
-    circle(3,6,400,130);
-    glColor3ub(139, 146, 22);
-    circle(5,12,395,140);
-    glColor3ub(139, 146, 22);
-    circle(5,12,405,140);
-    glColor3ub(139, 146, 22);
-    circle(5,12,410,135);
-    glColor3ub(139, 146, 22);
-    circle(5,12,390,150);
-
-
-    glColor3ub(181, 106, 76);
-    circle(5,12,395,152);
-    glColor3ub(139, 146, 22);
-    circle(5,12,396,152);
-    glColor3ub(139, 146, 22);
-    circle(5,12,400,170);
-    glColor3ub(139, 146, 22);
-    circle(4,10,395,165);
-    glColor3ub(181, 106, 76);
-    circle(4,10,397,163);
-
-    glColor3ub(139, 146, 22);
-    circle(4,10,398,162);
-
-    glColor3ub(139, 146, 22);
-    circle(5,12,410,160);
-    glColor3ub(139, 146, 22);
-    circle(5,12,405,160);
-    glColor3ub(181, 106, 76);
-    circle(5,12,404,155);
-    glColor3ub(139, 146, 22);
-    circle(5,12,403,154);
-    glColor3ub(139, 146, 22);
-    circle(5,12,415,150);
-    glColor3ub(181, 106, 76);
-    circle(5,12,410,145);
-    glColor3ub(139, 146, 22);
-    circle(5,12,409,145);
-    glColor3ub(139, 146, 22);
-    circle(5,12,400,148);
-    glColor3ub(139, 146, 22);
-    circle(5,12,412,170);
-
-
-
-    glColor3ub(227, 91, 137);         ///Full..........2nd building.........comp.
-    circle(1,2,400,148);
-    glColor3ub(227, 91, 137);
-    circle(1,2,400,168);
-    glColor3ub(227, 91, 137);
-    circle(1,2,410,168);
-    glColor3ub(227, 91, 137);
-    circle(1,2,405,157);
-    glColor3ub(227, 91, 137);
-    circle(1,2,389,148);
-    glColor3ub(227, 91, 137);
-    circle(1,2.5,395,163);
-    glColor3ub(227, 91, 137);
-    circle(1,1.5,396,139);
-    glColor3ub(227, 91, 137);
-    circle(1,2.5,410,135);
-    glColor3ub(227, 91, 137);
-    circle(1,3,415,148);
-    glColor3ub(227, 91, 137);
-    circle(1,3,405,132);
-
-
-    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 2nd Building........6   ///
-    glColor3ub(75, 35, 5);
-    glVertex2f(405,119);
-    glVertex2f(408,119);
-    glVertex2f(407,129);
-    glVertex2f(402,159);
-    glEnd();
-    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 2nd Building........6   ///
-    glColor3ub(75, 35, 5);
-    glVertex2f(405,119);
-    glVertex2f(408,119);
-    glVertex2f(404,129);
-    glVertex2f(398,139);
-    glEnd();
-
-    glBegin(GL_TRIANGLE_FAN);  ///tree.........2nd Building........6   ///
-    glColor3ub(75, 35, 5);
-    glVertex2f(404,119);
-    glVertex2f(408,119);
-    glVertex2f(409,139);
-    glVertex2f(412,169);
-    glEnd();
 
 
     ///3rd Building Design///
 ///white part///
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(555,90);
-    glVertex2f(615,90);
-    glVertex2f(615,475);
-    glVertex2f(555,475);
+    glVertex2f(575,90);
+    glVertex2f(635,90);
+    glVertex2f(635,475);
+    glVertex2f(575,475);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(557.5,90);        //3rd Building main part 2
-    glVertex2f(611,90);
-    glVertex2f(611,460);
-    glVertex2f(557.5,460);
+    glVertex2f(577.5,90);        //3rd Building main part 2
+    glVertex2f(631,90);
+    glVertex2f(631,460);
+    glVertex2f(577.5,460);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(615,90);         //3rd Building 2nd part 2
-    glVertex2f(645,90);
-    glVertex2f(645,420);
-    glVertex2f(615,420);
+    glVertex2f(635,90);         //3rd Building 2nd part 2
+    glVertex2f(665,90);
+    glVertex2f(665,420);
+    glVertex2f(635,420);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(615,90);         //3rd Building 2nd part 1
-    glVertex2f(642.5,90);
-    glVertex2f(642.5,410);
-    glVertex2f(615,410);
+    glVertex2f(635,90);         //3rd Building 2nd part 1
+    glVertex2f(662.5,90);
+    glVertex2f(662.5,410);
+    glVertex2f(635,410);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(617,370);   //part 2 3rd Building 6th floor2..........outlook
-    glVertex2f(642.5,370);
-    glVertex2f(642.5,400);
-    glVertex2f(617,400);
+    glVertex2f(637,370);   //part 2 3rd Building 6th floor2..........outlook
+    glVertex2f(662.5,370);
+    glVertex2f(662.5,400);
+    glVertex2f(637,400);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(123, 88, 71);
-    glVertex2f(618,365);   //part 2 3rd Building 6th floor2..........outlook
-    glVertex2f(628,365);
-    glVertex2f(628,400);
-    glVertex2f(618,400);
+    glVertex2f(638,365);   //part 2 3rd Building 6th floor2..........outlook
+    glVertex2f(648,365);
+    glVertex2f(648,400);
+    glVertex2f(638,400);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex2f(623,365);   //Door 3rd Building 6th floor2..........outlook-1
-    glVertex2f(624,365);
-    glVertex2f(624,392);
-    glVertex2f(623,392);
+    glVertex2f(643,365);   //Door 3rd Building 6th floor2..........outlook-1
+    glVertex2f(644,365);
+    glVertex2f(644,392);
+    glVertex2f(643,392);
     glEnd();
 
 /////////////****
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,90); //3rd Building 3rd Building floor1
-    glVertex2f(647,90);
-    glVertex2f(647,145);
-    glVertex2f(595,145);
+    glVertex2f(615,90); //3rd Building 3rd Building floor1
+    glVertex2f(667,90);
+    glVertex2f(667,145);
+    glVertex2f(615,145);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,145);   //3rd Building 2nd floor1
-    glVertex2f(647,145);
-    glVertex2f(647,200);
-    glVertex2f(595,200);
+    glVertex2f(615,145);   //3rd Building 2nd floor1
+    glVertex2f(667,145);
+    glVertex2f(667,200);
+    glVertex2f(615,200);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,200);   //3rd Building 3rd floor1
-    glVertex2f(647,200);
-    glVertex2f(647,255);
-    glVertex2f(595,255);
+    glVertex2f(615,200);   //3rd Building 3rd floor1
+    glVertex2f(667,200);
+    glVertex2f(667,255);
+    glVertex2f(615,255);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,255);   //3rd Building 4th floor1
-    glVertex2f(647,255);
-    glVertex2f(647,310);
-    glVertex2f(595,310);
+    glVertex2f(615,255);   //3rd Building 4th floor1
+    glVertex2f(667,255);
+    glVertex2f(667,310);
+    glVertex2f(615,310);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,310);   //3rd Building 5th floor1
-    glVertex2f(647,310);
-    glVertex2f(647,365);
-    glVertex2f(595,365);
+    glVertex2f(615,310);   //3rd Building 5th floor1
+    glVertex2f(667,310);
+    glVertex2f(667,365);
+    glVertex2f(615,365);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,365);   //3rd Building 6th floor1
-    glVertex2f(647,365);
-    glVertex2f(647,420);
-    glVertex2f(595,420);
+    glVertex2f(615,365);   //3rd Building 6th floor1
+    glVertex2f(667,365);
+    glVertex2f(667,420);
+    glVertex2f(615,420);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(204, 204, 204);
-    glVertex2f(595,420);   //3rd Building 7th floor1
-    glVertex2f(647,420);
-    glVertex2f(647,475);
-    glVertex2f(595,475);
+    glVertex2f(615,420);   //3rd Building 7th floor1
+    glVertex2f(667,420);
+    glVertex2f(667,475);
+    glVertex2f(615,475);
     glEnd();
 
      ///design of main building....red and glass....
 
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,420);  //7 3rd Building main part3
-    glVertex2f(572,420);
-    glVertex2f(572,460);
-    glVertex2f(557.5,460);
+    glVertex2f(577.5,420);  //7 3rd Building main part3
+    glVertex2f(592,420);
+    glVertex2f(592,460);
+    glVertex2f(577.5,460);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,365);  //6 3rd Building main part3
-    glVertex2f(572,365);
-    glVertex2f(572,405);
-    glVertex2f(557.5,405);
+    glVertex2f(577.5,365);  //6 3rd Building main part3
+    glVertex2f(592,365);
+    glVertex2f(592,405);
+    glVertex2f(577.5,405);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,310);  //5 3rd Building main part3
-    glVertex2f(572,310);
-    glVertex2f(572,350);
-    glVertex2f(557.5,350);
+    glVertex2f(577.5,310);  //5 3rd Building main part3
+    glVertex2f(592,310);
+    glVertex2f(592,350);
+    glVertex2f(577.5,350);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,255);  //4 3rd Building main part3
-    glVertex2f(572,255);
-    glVertex2f(572,295);
-    glVertex2f(557.5,295);
+    glVertex2f(577.5,255);  //4 3rd Building main part3
+    glVertex2f(592,255);
+    glVertex2f(592,295);
+    glVertex2f(577.5,295);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,200);  //3 3rd Building main part3
-    glVertex2f(572,200);
-    glVertex2f(572,240);
-    glVertex2f(557.5,240);
+    glVertex2f(577.5,200);  //3 3rd Building main part3
+    glVertex2f(592,200);
+    glVertex2f(592,240);
+    glVertex2f(577.5,240);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,145);  //2 3rd Building main part3
-    glVertex2f(572,145);
-    glVertex2f(572,185);
-    glVertex2f(557.5,185);
+    glVertex2f(577.5,145);  //2 3rd Building main part3
+    glVertex2f(592,145);
+    glVertex2f(592,185);
+    glVertex2f(577.5,185);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(177,124,119);
-    glVertex2f(557.5,90);  //1 3rd Building main part3
-    glVertex2f(572,90);
-    glVertex2f(572,130);
-    glVertex2f(557.5,130);
+    glVertex2f(577.5,90);  //1 3rd Building main part3
+    glVertex2f(592,90);
+    glVertex2f(592,130);
+    glVertex2f(577.5,130);
     glEnd();
     /////////.....................
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,420);  //7 3rd Building main part3
-    glVertex2f(611,420);
-    glVertex2f(611,460);
-    glVertex2f(600,460);
+    glVertex2f(620,420);  //7 3rd Building main part3
+    glVertex2f(631,420);
+    glVertex2f(631,460);
+    glVertex2f(620,460);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,365);  //6 3rd Building main part3
-    glVertex2f(611,365);
-    glVertex2f(611,405);
-    glVertex2f(600,405);
+    glVertex2f(620,365);  //6 3rd Building main part3
+    glVertex2f(631,365);
+    glVertex2f(631,405);
+    glVertex2f(620,405);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,310);  //5 3rd Building main part3
-    glVertex2f(611,310);
-    glVertex2f(611,350);
-    glVertex2f(600,350);
+    glVertex2f(620,310);  //5 3rd Building main part3
+    glVertex2f(631,310);
+    glVertex2f(631,350);
+    glVertex2f(620,350);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,255);  //4 3rd Building main part3
-    glVertex2f(611,255);
-    glVertex2f(611,295);
-    glVertex2f(600,295);
+    glVertex2f(620,255);  //4 3rd Building main part3
+    glVertex2f(631,255);
+    glVertex2f(631,295);
+    glVertex2f(620,295);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,200);  //3 3rd Building main part3
-    glVertex2f(611,200);
-    glVertex2f(611,240);
-    glVertex2f(600,240);
+    glVertex2f(620,200);  //3 3rd Building main part3
+    glVertex2f(631,200);
+    glVertex2f(631,240);
+    glVertex2f(620,240);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(600,145);  //2 3rd Building main part3
-    glVertex2f(611,145);
-    glVertex2f(611,185);
-    glVertex2f(600,185);
+    glVertex2f(620,145);  //2 3rd Building main part3
+    glVertex2f(631,145);
+    glVertex2f(631,185);
+    glVertex2f(620,185);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(143,175,175);
-    glVertex2f(590,90);  //door
-    glVertex2f(611,90);
-    glVertex2f(611,130);
-    glVertex2f(590,130);
+    glVertex2f(610,90);  //door
+    glVertex2f(631,90);
+    glVertex2f(631,130);
+    glVertex2f(610,130);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 0, 77);
-    glVertex2f(600,90);  //door 1 main
-    glVertex2f(601,90);
-    glVertex2f(601,130);
-    glVertex2f(600,130);
+    glVertex2f(620,90);  //door 1 main
+    glVertex2f(621,90);
+    glVertex2f(621,130);
+    glVertex2f(620,130);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(601,100);  //door 1 main
-    glVertex2f(602,100);
-    glVertex2f(602,120);
-    glVertex2f(601,120);
+    glVertex2f(621,100);  //door 1 main
+    glVertex2f(622,100);
+    glVertex2f(622,120);
+    glVertex2f(621,120);
     glEnd();
 
     //////////............................
 
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,420);  //7 3rd Building main part3
-    glVertex2f(615,420);
-    glVertex2f(615,421);
-    glVertex2f(555,421);
+    glVertex2f(575,420);  //7 3rd Building main part3
+    glVertex2f(635,420);
+    glVertex2f(635,421);
+    glVertex2f(575,421);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,365);  //6 3rd Building main part3
-    glVertex2f(642.5,365);
-    glVertex2f(642.5,366);
-    glVertex2f(555,366);
+    glVertex2f(575,365);  //6 3rd Building main part3
+    glVertex2f(662.5,365);
+    glVertex2f(662.5,366);
+    glVertex2f(575,366);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,310);  //5 3rd Building main part3
-    glVertex2f(615,310);
-    glVertex2f(615,311);
-    glVertex2f(555,311);
+    glVertex2f(575,310);  //5 3rd Building main part3
+    glVertex2f(635,310);
+    glVertex2f(635,311);
+    glVertex2f(575,311);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,255);  //4 3rd Building main part3
-    glVertex2f(615,255);
-    glVertex2f(615,256);
-    glVertex2f(555,256);
+    glVertex2f(575,255);  //4 3rd Building main part3
+    glVertex2f(635,255);
+    glVertex2f(635,256);
+    glVertex2f(575,256);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,199);  //3 3rd Building main part3
-    glVertex2f(615,199);
-    glVertex2f(615,200);
-    glVertex2f(555,200);
+    glVertex2f(575,199);  //3 3rd Building main part3
+    glVertex2f(635,199);
+    glVertex2f(635,200);
+    glVertex2f(575,200);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,145);  //2 3rd Building main part3
-    glVertex2f(615,145);
-    glVertex2f(615,146);
-    glVertex2f(555,146);
+    glVertex2f(575,145);  //2 3rd Building main part3
+    glVertex2f(635,145);
+    glVertex2f(635,146);
+    glVertex2f(575,146);
     glEnd();
 
     ///////...............................
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,405);  //7 3rd Building main part3
-    glVertex2f(615,405);
-    glVertex2f(615,406);
-    glVertex2f(555,406);
+    glVertex2f(575,405);  //7 3rd Building main part3
+    glVertex2f(635,405);
+    glVertex2f(635,406);
+    glVertex2f(575,406);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,350);  //6 3rd Building main part3
-    glVertex2f(615,350);
-    glVertex2f(615,351);
-    glVertex2f(555,351);
+    glVertex2f(575,350);  //6 3rd Building main part3
+    glVertex2f(635,350);
+    glVertex2f(635,351);
+    glVertex2f(575,351);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,295);  //5 3rd Building main part3
-    glVertex2f(615,295);
-    glVertex2f(615,296);
-    glVertex2f(555,296);
+    glVertex2f(575,295);  //5 3rd Building main part3
+    glVertex2f(635,295);
+    glVertex2f(635,296);
+    glVertex2f(575,296);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,240);  //4 3rd Building main part3
-    glVertex2f(615,240);
-    glVertex2f(615,241);
-    glVertex2f(555,241);
+    glVertex2f(575,240);  //4 3rd Building main part3
+    glVertex2f(635,240);
+    glVertex2f(635,241);
+    glVertex2f(575,241);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,185);  //3 3rd Building main part3
-    glVertex2f(615,185);
-    glVertex2f(615,186);
-    glVertex2f(555,186);
+    glVertex2f(575,185);  //3 3rd Building main part3
+    glVertex2f(635,185);
+    glVertex2f(635,186);
+    glVertex2f(575,186);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(179, 179, 179);
-    glVertex2f(555,130);  //2 3rd Building main part3
-    glVertex2f(615,130);
-    glVertex2f(615,131);
-    glVertex2f(555,131);
+    glVertex2f(575,130);  //2 3rd Building main part3
+    glVertex2f(635,130);
+    glVertex2f(635,131);
+    glVertex2f(575,131);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(89, 89, 89);
-    glVertex2f(645,90);  // part2 last black line
-    glVertex2f(646,90);
-    glVertex2f(646,460);
-    glVertex2f(645,460);
+    glVertex2f(665,90);  // part2 last black line
+    glVertex2f(666,90);
+    glVertex2f(666,460);
+    glVertex2f(665,460);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,420);  //7 2nd part3
-    glVertex2f(642.5,420);
-    glVertex2f(642.5,460);
-    glVertex2f(615,460);
+    glVertex2f(635,420);  //7 2nd part3
+    glVertex2f(662.5,420);
+    glVertex2f(662.5,460);
+    glVertex2f(635,460);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,365);  //6 2nd part3
-    glVertex2f(642.5,365);
-    glVertex2f(642.5,405);
-    glVertex2f(615,405);
+    glVertex2f(635,365);  //6 2nd part3
+    glVertex2f(662.5,365);
+    glVertex2f(662.5,405);
+    glVertex2f(635,405);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,310);  //5 part3
-    glVertex2f(642.5,310);
-    glVertex2f(642.5,350);
-    glVertex2f(615,350);
+    glVertex2f(635,310);  //5 part3
+    glVertex2f(662.5,310);
+    glVertex2f(662.5,350);
+    glVertex2f(635,350);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,255);  //4 2nd part3
-    glVertex2f(642.5,255);
-    glVertex2f(642.5,295);
-    glVertex2f(615,295);
+    glVertex2f(635,255);  //4 2nd part3
+    glVertex2f(662.5,255);
+    glVertex2f(662.5,295);
+    glVertex2f(635,295);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,200);  //3 2nd part3
-    glVertex2f(642.5,200);
-    glVertex2f(642.5,240);
-    glVertex2f(615,240);
+    glVertex2f(635,200);  //3 2nd part3
+    glVertex2f(662.5,200);
+    glVertex2f(662.5,240);
+    glVertex2f(635,240);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(615,145);  //2 2nd part3
-    glVertex2f(642.5,145);
-    glVertex2f(642.5,185);
-    glVertex2f(615,185);
+    glVertex2f(635,145);  //2 2nd part3
+    glVertex2f(662.5,145);
+    glVertex2f(662.5,185);
+    glVertex2f(635,185);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(143,175,175);
-    glVertex2f(615,90);  //1 3rd Building main part3
-    glVertex2f(642.5,90);
-    glVertex2f(642.5,130);
-    glVertex2f(615,130);
+    glVertex2f(635,90);  //1 3rd Building main part3
+    glVertex2f(662.5,90);
+    glVertex2f(662.5,130);
+    glVertex2f(635,130);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 0, 77);
-    glVertex2f(622,90);  //1 main part3
-    glVertex2f(623,90);
-    glVertex2f(623,130);
-    glVertex2f(622,130);
+    glVertex2f(642,90);  //1 main part3
+    glVertex2f(643,90);
+    glVertex2f(643,130);
+    glVertex2f(642,130);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 0, 77);
-    glVertex2f(632,90);  //1 main part3
-    glVertex2f(633,90);
-    glVertex2f(633,130);
-    glVertex2f(632,130);
+    glVertex2f(652,90);  //1 main part3
+    glVertex2f(653,90);
+    glVertex2f(653,130);
+    glVertex2f(652,130);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(623,100);  //1 main part3
-    glVertex2f(624,100);
-    glVertex2f(624,120);
-    glVertex2f(623,120);
+    glVertex2f(643,100);  //1 main part3
+    glVertex2f(644,100);
+    glVertex2f(644,120);
+    glVertex2f(643,120);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(633,100);  ///1 main part3
-    glVertex2f(634,100);
-    glVertex2f(634,120);
-    glVertex2f(633,120);
+    glVertex2f(653,100);  ///1 main part3
+    glVertex2f(654,100);
+    glVertex2f(654,120);
+    glVertex2f(653,120);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(0, 26, 51);
-    glVertex2f(615,90);   ///partation of Blue line
-    glVertex2f(616,90);
-    glVertex2f(616,460);
-    glVertex2f(615,460);
+    glVertex2f(635,90);   ///partation of Blue line
+    glVertex2f(636,90);
+    glVertex2f(636,460);
+    glVertex2f(635,460);
     glEnd();
 
 ///End 3rd Building//
@@ -3049,249 +2499,870 @@ void display ()
     circle(1.5,3,638,560);
     ///Tower End//
 
-      ///4th Building Design///
+      ///4th Building Design///Top
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);///4th Building main part 2
-    glVertex2f(443.5,440);
-    glVertex2f(515.2,440);
-    glVertex2f(515.2,472);
-    glVertex2f(443.5,472);
+    glVertex2f(483.5,440);
+    glVertex2f(555.2,440);
+    glVertex2f(555.2,472);
+    glVertex2f(483.5,472);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(443.5,440);        ///4th Building main part 2
-    glVertex2f(515.2,440);
-    glVertex2f(515.2,467);
-    glVertex2f(443.5,467);
+    glVertex2f(483.5,440);        ///4th Building main part 2
+    glVertex2f(555.2,440);
+    glVertex2f(555.2,467);
+    glVertex2f(483.5,467);
     glEnd();
 ///white part///
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);///4th Building main part 2
-    glVertex2f(435,119);
-    glVertex2f(523.5,119);
-    glVertex2f(523.5,442);
-    glVertex2f(435,442);
+    glVertex2f(475,119);
+    glVertex2f(563.5,119);
+    glVertex2f(563.5,442);
+    glVertex2f(475,442);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(85,119,119);
-    glVertex2f(437.5,119);        ///4th Building main part 2
-    glVertex2f(521,119);
-    glVertex2f(521,434);
-    glVertex2f(437.5,434);
+    glVertex2f(477.5,119);        ///4th Building main part 2
+    glVertex2f(561,119);
+    glVertex2f(561,434);
+    glVertex2f(477.5,434);
     glEnd();
 
     ///floor divided y+40//
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,150);  ///4th Building 1st floor1
-    glVertex2f(523,150);
-    glVertex2f(523,154);
-    glVertex2f(435,154);
+    glVertex2f(475,150);  ///4th Building 1st floor1
+    glVertex2f(563,150);
+    glVertex2f(563,154);
+    glVertex2f(475,154);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,190);  ///4th Building 2nd floor1
-    glVertex2f(523,190);
-    glVertex2f(523,193);
-    glVertex2f(435,193);
+    glVertex2f(475,190);  ///4th Building 2nd floor1
+    glVertex2f(563,190);
+    glVertex2f(563,193);
+    glVertex2f(475,193);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,230);  ///4th Building 3rd floor1
-    glVertex2f(523,230);
-    glVertex2f(523,234);
-    glVertex2f(435,234);
+    glVertex2f(475,230);  ///4th Building 3rd floor1
+    glVertex2f(563,230);
+    glVertex2f(563,234);
+    glVertex2f(475,234);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,270);  ///4th Building 4th floor1
-    glVertex2f(523,270);
-    glVertex2f(523,273);
-    glVertex2f(435,273);
+    glVertex2f(475,270);  ///4th Building 4th floor1
+    glVertex2f(563,270);
+    glVertex2f(563,273);
+    glVertex2f(475,273);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,310);  ///4th Building 5th floor1
-    glVertex2f(523,310);
-    glVertex2f(523,314);
-    glVertex2f(435,314);
+    glVertex2f(475,310);  ///4th Building 5th floor1
+    glVertex2f(563,310);
+    glVertex2f(563,314);
+    glVertex2f(475,314);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,310);  ///4th Building 6th floor1
-    glVertex2f(523,310);
-    glVertex2f(523,314);
-    glVertex2f(435,314);
+    glVertex2f(475,310);  ///4th Building 6th floor1
+    glVertex2f(563,310);
+    glVertex2f(563,314);
+    glVertex2f(475,314);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,350);  ///4th Building 7th floor1
-    glVertex2f(523,350);
-    glVertex2f(523,353);
-    glVertex2f(435,353);
+    glVertex2f(475,350);  ///4th Building 7th floor1
+    glVertex2f(563,350);
+    glVertex2f(563,353);
+    glVertex2f(475,353);
     glEnd();
     //floor divided
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(435,390);  ///4th Building 8th floor1
-    glVertex2f(523,390);
-    glVertex2f(523,394);
-    glVertex2f(435,394);
+    glVertex2f(475,390);  ///4th Building 8th floor1
+    glVertex2f(563,390);
+    glVertex2f(563,394);
+    glVertex2f(475,394);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(451,119);  /// 4th Building white line vertical
-    glVertex2f(451.5,119);
-    glVertex2f(451.5,440);
-    glVertex2f(451,440);
+    glVertex2f(491,119);  /// 4th Building white line vertical
+    glVertex2f(491.5,119);
+    glVertex2f(491.5,440);
+    glVertex2f(491,440);
     glEnd();
      glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(465,119);  /// 4th Building white line vertical
-    glVertex2f(465.5,119);
-    glVertex2f(465.5,440);
-    glVertex2f(465,440);
+    glVertex2f(505,119);  /// 4th Building white line vertical
+    glVertex2f(505.5,119);
+    glVertex2f(505.5,440);
+    glVertex2f(505,440);
     glEnd();
      glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(479,119);  /// 4th Building white line vertical
-    glVertex2f(479.5,119);
-    glVertex2f(479.5,440);
-    glVertex2f(479,440);
+    glVertex2f(519,119);  /// 4th Building white line vertical
+    glVertex2f(519.5,119);
+    glVertex2f(519.5,440);
+    glVertex2f(519,440);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(493,119);  /// 4th Building white line vertical
-    glVertex2f(493.5,119);
-    glVertex2f(493.5,440);
-    glVertex2f(493,440);
+    glVertex2f(533,119);  /// 4th Building white line vertical
+    glVertex2f(533.5,119);
+    glVertex2f(533.5,440);
+    glVertex2f(533,440);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(242, 242, 242);
-    glVertex2f(507,119);  /// 4th Building white line vertical
-    glVertex2f(507.5,119);
-    glVertex2f(507.5,440);
-    glVertex2f(507,440);
+    glVertex2f(547,119);  /// 4th Building white line vertical
+    glVertex2f(547.5,119);
+    glVertex2f(547.5,440);
+    glVertex2f(547,440);
     glEnd();
 
     ///Door
     glBegin(GL_QUADS);
     glColor3ub(0, 26, 51);
-    glVertex2f(465,140);  ///4th Building 1st floor1
-    glVertex2f(493,140);
-    glVertex2f(493,144);
-    glVertex2f(465,144);
+    glVertex2f(505,140);  ///4th Building 1st floor1
+    glVertex2f(533,140);
+    glVertex2f(533,144);
+    glVertex2f(505,144);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 26, 51);
-    glVertex2f(492,119);  /// 4th Building white line vertical
-    glVertex2f(493.6,119);
-    glVertex2f(493.6,140);
-    glVertex2f(492,140);
+    glVertex2f(532,119);  /// 4th Building white line vertical
+    glVertex2f(533.6,119);
+    glVertex2f(533.6,140);
+    glVertex2f(532,140);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 26, 51);
-    glVertex2f(478,119);  /// 4th Building white line vertical
-    glVertex2f(479.6,119);
-    glVertex2f(479.6,140);
-    glVertex2f(478,140);
+    glVertex2f(518,119);  /// 4th Building white line vertical
+    glVertex2f(519.6,119);
+    glVertex2f(519.6,140);
+    glVertex2f(518,140);
     glEnd();
     glBegin(GL_QUADS);
     glColor3ub(0, 26, 51);
-    glVertex2f(465,119);  ///4th Building white line vertical
-    glVertex2f(466.6,119);
-    glVertex2f(466.6,140);
-    glVertex2f(465,140);
+    glVertex2f(505,119);  ///4th Building white line vertical
+    glVertex2f(506.6,119);
+    glVertex2f(506.6,140);
+    glVertex2f(505,140);
     glEnd();
     ///End 4th Building///
-	
+
     ///Hospital signboard
+
     glColor3ub(0, 51, 204);
-    glRasterPos2i(464,455);
+    glRasterPos2i(504,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'H');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(469,455);
+    glRasterPos2i(509,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'O');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(473,455);
+    glRasterPos2i(513,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'S');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(477,455);
+    glRasterPos2i(517,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'P');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(481,455);
+    glRasterPos2i(521,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'I');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(485,455);
+    glRasterPos2i(525,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'T');
      glColor3ub(0, 51, 204);
-    glRasterPos2i(489,455);
+    glRasterPos2i(529,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'A');
     glColor3ub(0, 51, 204);
-    glRasterPos2i(494,455);
+    glRasterPos2i(534,455);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'L');
+    ///End//
+
+    ///5th Building Food Court///
+    /// Food court big Right part///
+    glBegin(GL_QUADS);
+    glColor3ub(52, 67, 74);///Food Court main part 2
+    glVertex2f(373,90);
+    glVertex2f(466,90);
+    glVertex2f(466,442);
+    glVertex2f(373,442);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(91,102,108);
+    glVertex2f(377.5,90);        ///Food Court main part 2
+    glVertex2f(461,90);
+    glVertex2f(461,440);
+    glVertex2f(377.5,440);
+    glEnd();
+
+    //floor divided
+    glBegin(GL_QUADS);
+    glColor3ub(52, 67, 74);
+    glVertex2f(282.5,270);  ///Middle divided left right
+    glVertex2f(466,270);
+    glVertex2f(466,281);
+    glVertex2f(282.5,281);
+    glEnd();
+
+    ///stairs//Top
+    glBegin(GL_QUADS);
+    glColor3ub(33, 46, 47);
+    glVertex2f(371,442);  ///3//
+    glVertex2f(467.5,442);
+    glVertex2f(467.5,451);
+    glVertex2f(371,451);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(20, 25, 33);
+    glVertex2f(371,454);  ///2//
+    glVertex2f(467.5,454);
+    glVertex2f(467.5,451);
+    glVertex2f(371,451);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(33, 46, 47);
+    glVertex2f(367,454);  ///1//
+    glVertex2f(471.5,454);
+    glVertex2f(471.5,463);
+    glVertex2f(367,463);
+    glEnd();
+
+    ///stairs Top End//
+
+    glBegin(GL_QUADS);
+    glColor3ub(72, 85, 93);
+    glVertex2f(377.5,433);
+    glVertex2f(461,433);
+    glVertex2f(461,440);
+    glVertex2f(377.5,440);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(382,290);        ///black Food Court Right part
+    glVertex2f(457,290);
+    glVertex2f(457,429);
+    glVertex2f(382,429);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(254, 246, 223);
+    glVertex2f(383.5,293.6);        /// white color Food Court Right part
+    glVertex2f(455.4,293.6);
+    glVertex2f(455.4,425.4);
+    glVertex2f(383.5,425.4);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(382,314.2);  ///middle line 2
+    glVertex2f(457,314.2);
+    glVertex2f(457,310.2);
+    glVertex2f(382,310.2);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(368,409.1);  ///middle line 1
+    glVertex2f(457,409.1);
+    glVertex2f(457,405.1);
+    glVertex2f(368,405.1);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(368,429.1);  ///middle line for sign board
+    glVertex2f(382,429.1);
+    glVertex2f(382,426);
+    glVertex2f(368,426);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(402,290);   ///partation of Blue line
+    glVertex2f(400.6,290);
+    glVertex2f(400.6,426);
+    glVertex2f(402,426);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(420,290);   ///partation of Blue line
+    glVertex2f(418.6,290);
+    glVertex2f(418.6,426);
+    glVertex2f(420,426);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(438,290);   ///partation of Blue line
+    glVertex2f(436.5,290);
+    glVertex2f(436.5,426);
+    glVertex2f(438,426);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(52, 67, 74);
+    glVertex2f(388.5,255.6);        ///  Food Court board Black
+    glVertex2f(450.2,255.6);
+    glVertex2f(450.2,283.4);
+    glVertex2f(388.5,283.4);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(182, 138, 94);
+    glVertex2f(386.5,258.3);        /// Food Court board
+    glVertex2f(448.3,258.3);
+    glVertex2f(448.3,287);
+    glVertex2f(386.5,287);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(250, 201, 143);
+    glVertex2f(386.5,281.2);  ///middle line 1
+    glVertex2f(448.3,281.2);
+    glVertex2f(448.3,279);
+    glVertex2f(386.5,279);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(250, 201, 143);
+    glVertex2f(386.5,273.2);  ///middle line 1
+    glVertex2f(448.3,273.2);
+    glVertex2f(448.3,271);
+    glVertex2f(386.5,271);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(250, 201, 143);
+    glVertex2f(386.5,265.2);  ///middle line 1
+    glVertex2f(448.3,265.2);
+    glVertex2f(448.3,263);
+    glVertex2f(386.5,263);
+    glEnd();
+
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(400,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'F');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(404,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'O');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(408,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'O');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(412,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'D');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(416,270);
+     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,' ');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(420,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'C');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(424,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'O');
+     glColor3ub(31, 46, 53);
+    glRasterPos2i(428,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'U');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(432,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'R');
+    glColor3ub(31, 46, 53);
+    glRasterPos2i(436,270);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'T');
+
+    glBegin(GL_QUADS);
+    glColor3ub(33, 45, 51);
+    glVertex2f(377.6,241.4);  ///middle line
+    glVertex2f(460.9,241.4);
+    glVertex2f(460.9,239.2);
+    glVertex2f(377.6,239.2);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(33, 45, 51);
+    glVertex2f(377.6,230.4);  ///middle line
+    glVertex2f(460.9,230.4);
+    glVertex2f(460.9,228.2);
+    glVertex2f(377.6,228.2);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(33, 45, 51);
+    glVertex2f(377.6,220.4);  ///middle line
+    glVertex2f(460.9,220.4);
+    glVertex2f(460.9,218.2);
+    glVertex2f(377.6,218.2);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(33, 45, 51);
+    glVertex2f(377.6,210.5);  ///middle line
+    glVertex2f(460.9,210.5);
+    glVertex2f(460.9,208.4);
+    glVertex2f(377.6,208.4);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(33, 45, 51);
+    glVertex2f(377.6,200.5);  ///middle line
+    glVertex2f(460.9,200.5);
+    glVertex2f(460.9,198.4);
+    glVertex2f(377.6,198.4);
+    glEnd();
+
+    ///Door///
+    glBegin(GL_QUADS);
+    glColor3ub(104, 111, 119);
+    glVertex2f(397,110);        ///black color Food court door
+    glVertex2f(442,110);
+    glVertex2f(442,230);
+    glVertex2f(397,230);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(34, 45, 51);
+    glVertex2f(398.5,110);        /// Food Court black color
+    glVertex2f(440,110);
+    glVertex2f(440,226.5);
+    glVertex2f(398.5,226.5);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(254, 242, 205);
+    glVertex2f(401.5,110);        /// Food Court Right part
+    glVertex2f(437,110);
+    glVertex2f(437,220.5);
+    glVertex2f(401.5,220.5);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(399,118.7);  ///
+    glVertex2f(440,118.7);
+    glVertex2f(440,124.6);
+    glVertex2f(399,124.6);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(34, 45, 51);
+    glVertex2f(420,110);   ///partation of Blue line
+    glVertex2f(416.6,110);
+    glVertex2f(416.6,226);
+    glVertex2f(420,226);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(104, 111, 119);
+    glVertex2f(421,110);   ///partation
+    glVertex2f(419.6,110);
+    glVertex2f(419.6,226);
+    glVertex2f(421,226);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(34, 45, 51);
+    glVertex2f(424,110);   ///partation of Blue line
+    glVertex2f(420.6,110);
+    glVertex2f(420.6,226);
+    glVertex2f(424,226);
+    glEnd();
+
+
+    ///End Right part///
+
+    ///Food Court left part
+    glBegin(GL_QUADS);
+    glColor3ub(91, 102, 108);///Food Court small left part
+    glVertex2f(288,110);
+    glVertex2f(373,110);
+    glVertex2f(373,270);
+    glVertex2f(288,270);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(293,120);        ///black Food Court small left part
+    glVertex2f(368,120);
+    glVertex2f(368,259);
+    glVertex2f(293,259);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(254, 246, 223);
+    glVertex2f(295,124);        /// white color Food Court small left part
+    glVertex2f(366,124);
+    glVertex2f(366,256);
+    glVertex2f(295,256);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(294.5,190);  ///middle line
+    glVertex2f(368,190);
+    glVertex2f(368,187);
+    glVertex2f(294.5,187);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(350,120);   ///partation of Blue line
+    glVertex2f(348.6,120);
+    glVertex2f(348.6,256);
+    glVertex2f(350,256);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(332,120);   ///partation of Blue line
+    glVertex2f(330.6,120);
+    glVertex2f(330.6,256);
+    glVertex2f(332,256);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(314,120);   ///partation of Blue line
+    glVertex2f(312.6,120);
+    glVertex2f(312.6,256);
+    glVertex2f(314,256);
+    glEnd();
+
+    ///top Boundary
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(284.3,280);   ///partation of Blue line
+    glVertex2f(282.5,280);
+    glVertex2f(282.5,321);
+    glVertex2f(284.3,321);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(302,280);   ///partation of Blue line
+    glVertex2f(300.2,280);
+    glVertex2f(300.2,321);
+    glVertex2f(302,321);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(320,280);   ///partation of Blue line
+    glVertex2f(318.2,280);
+    glVertex2f(318.2,321);
+    glVertex2f(320,321);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(338,280);   ///partation of Blue line
+    glVertex2f(336.1,280);
+    glVertex2f(336.1,321);
+    glVertex2f(338,321);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(356,280);   ///partation of Blue line
+    glVertex2f(354.2,280);
+    glVertex2f(354.2,321);
+    glVertex2f(356,321);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(373,280);   ///partation of Blue line
+    glVertex2f(371.2,280);
+    glVertex2f(371.2,321);
+    glVertex2f(373,321);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(282.5,314);  ///middle line
+    glVertex2f(372,314);
+    glVertex2f(372,309.6);
+    glVertex2f(282.5,309.6);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(282.5,304);  ///middle line
+    glVertex2f(372,304);
+    glVertex2f(372,300);
+    glVertex2f(282.5,300);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(27, 45, 54);
+    glVertex2f(282.5,294);  ///middle line
+    glVertex2f(372,294);
+    glVertex2f(372,290);
+    glVertex2f(282.5,290);
+    glEnd();
+    ///End top Boundary//
+    ///End left part//
+
+
+
+    ///stairs//
+    glBegin(GL_QUADS);
+    glColor3ub(33, 46, 47);
+    glVertex2f(284,90);  ///Bottom3
+    glVertex2f(471.5,90);
+    glVertex2f(471.5,99);
+    glVertex2f(284,99);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(20, 25, 33);
+    glVertex2f(286,102);  ///middle2
+    glVertex2f(468,102);
+    glVertex2f(468,99);
+    glVertex2f(286,99);
+    glEnd();
+    glBegin(GL_QUADS);
+    glColor3ub(33, 46, 47);
+    glVertex2f(286,102);  ///Top1
+    glVertex2f(468,102);
+    glVertex2f(468,110);
+    glVertex2f(286,110);
+    glEnd();
+
+    ///stairs End//
+
+    ///End Food court///
+
+    ///....Right side circle tree in Food court.....6 ///
+    glColor3ub(139, 146, 22);
+    circle(3,6,468,101);
+    glColor3ub(139, 146, 22);
+    circle(5,12,463,111);
+    glColor3ub(139, 146, 22);
+    circle(5,12,473,111);
+    glColor3ub(139, 146, 22);
+    circle(5,12,478,106);
+    glColor3ub(139, 146, 22);
+    circle(5,12,458,121);
+
+
+    glColor3ub(181, 106, 76);
+    circle(5,12,463,123);
+    glColor3ub(139, 146, 22);
+    circle(5,12,464,123);
+    glColor3ub(139, 146, 22);
+    circle(5,12,468,141);
+    glColor3ub(139, 146, 22);
+    circle(4,10,463,136);
+    glColor3ub(181, 106, 76);
+    circle(4,10,465,134);
+
+    glColor3ub(139, 146, 22);
+    circle(4,10,466,133);
+
+    glColor3ub(139, 146, 22);
+    circle(5,12,478,131);
+    glColor3ub(139, 146, 22);
+    circle(5,12,473,131);
+    glColor3ub(181, 106, 76);
+    circle(5,12,472,126);
+    glColor3ub(139, 146, 22);
+    circle(5,12,471,125);
+    glColor3ub(139, 146, 22);
+    circle(5,12,483,121);
+    glColor3ub(181, 106, 76);
+    circle(5,12,478,116);
+    glColor3ub(139, 146, 22);
+    circle(5,12,477,116);
+    glColor3ub(139, 146, 22);
+    circle(5,12,468,119);
+    glColor3ub(139, 146, 22);
+    circle(5,12,480,141);
+
+
+
+    glColor3ub(227, 91, 137);         ///Full..........Food court .........comp.
+    circle(1,2,468,119);
+    glColor3ub(227, 91, 137);
+    circle(1,2,468,133);
+    glColor3ub(227, 91, 137);
+    circle(1,2,478,133);
+    glColor3ub(227, 91, 137);
+    circle(1,2,483,128);
+    glColor3ub(227, 91, 137);
+    circle(1,2,457,119);
+    glColor3ub(227, 91, 137);
+    circle(1,2.5,463,134);
+    glColor3ub(227, 91, 137);
+    circle(1,1.5,464,110);
+    glColor3ub(227, 91, 137);
+    circle(1,2.5,478,106);
+    glColor3ub(227, 91, 137);
+    circle(1,3,483,119);
+    glColor3ub(227, 91, 137);
+    circle(1,3,473,103);
+
+
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside Food Court ........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(473,90);
+    glVertex2f(476,90);
+    glVertex2f(475,100);
+    glVertex2f(470,130);
+    glEnd();
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside Food Court........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(473,90);
+    glVertex2f(476,90);
+    glVertex2f(472,100);
+    glVertex2f(466,110);
+    glEnd();
+
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........Food Court........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(472,90);
+    glVertex2f(476,90);
+    glVertex2f(477,110);
+    glVertex2f(480,140);
+    glEnd();
+///End Right side circle tree///
+
+///....Left side circle tree in Food court.....6 ///
+    glColor3ub(139, 146, 22);
+    circle(3,6,280,101);
+    glColor3ub(139, 146, 22);
+    circle(5,12,275,111);
+    glColor3ub(139, 146, 22);
+    circle(5,12,285,111);
+    glColor3ub(139, 146, 22);
+    circle(5,12,290,106);
+    glColor3ub(139, 146, 22);
+    circle(5,12,270,121);
+
+
+    glColor3ub(181, 106, 76);
+    circle(5,12,275,123);
+    glColor3ub(139, 146, 22);
+    circle(5,12,276,123);
+    glColor3ub(139, 146, 22);
+    circle(5,12,280,141);
+    glColor3ub(139, 146, 22);
+    circle(4,10,275,136);
+    glColor3ub(181, 106, 76);
+    circle(4,10,277,134);
+
+    glColor3ub(139, 146, 22);
+    circle(4,10,278,133);
+
+    glColor3ub(139, 146, 22);
+    circle(5,12,290,131);
+    glColor3ub(139, 146, 22);
+    circle(5,12,285,131);
+    glColor3ub(181, 106, 76);
+    circle(5,12,284,126);
+    glColor3ub(139, 146, 22);
+    circle(5,12,283,125);
+    glColor3ub(139, 146, 22);
+    circle(5,12,295,121);
+    glColor3ub(181, 106, 76);
+    circle(5,12,290,116);
+    glColor3ub(139, 146, 22);
+    circle(5,12,289,116);
+    glColor3ub(139, 146, 22);
+    circle(5,12,280,119);
+    glColor3ub(139, 146, 22);
+    circle(5,12,292,141);
+
+
+
+    glColor3ub(227, 91, 137);         ///Full..........Food court .........comp.
+    circle(1,2,280,119);
+    glColor3ub(227, 91, 137);
+    circle(1,2,280,133);
+    glColor3ub(227, 91, 137);
+    circle(1,2,290,133);
+    glColor3ub(227, 91, 137);
+    circle(1,2,295,128);
+    glColor3ub(227, 91, 137);
+    circle(1,2,269,119);
+    glColor3ub(227, 91, 137);
+    circle(1,2.5,275,134);
+    glColor3ub(227, 91, 137);
+    circle(1,1.5,276,110);
+    glColor3ub(227, 91, 137);
+    circle(1,2.5,290,106);
+    glColor3ub(227, 91, 137);
+    circle(1,3,295,119);
+    glColor3ub(227, 91, 137);
+    circle(1,3,285,103);
+
+
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside Food Court ........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(285,90);
+    glVertex2f(288,90);
+    glVertex2f(287,100);
+    glVertex2f(282,130);
+    glEnd();
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........beside Food Court........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(285,90);
+    glVertex2f(288,90);
+    glVertex2f(284,100);
+    glVertex2f(278,110);
+    glEnd();
+
+    glBegin(GL_TRIANGLE_FAN);  ///tree.........Food Court........6   ///
+    glColor3ub(75, 35, 5);
+    glVertex2f(284,90);
+    glVertex2f(288,90);
+    glVertex2f(289,110);
+    glVertex2f(292,140);
+    glEnd();
+///End Left side circle tree///
+
+
 
     glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 4th Building........2   ///
     glColor3ub(75,35,05);
-    glVertex2f(525,119);
-    glVertex2f(530,119);
-    glVertex2f(530,139);
-    glVertex2f(525,139);
+    glVertex2f(545,119);
+    glVertex2f(550,119);
+    glVertex2f(550,139);
+    glVertex2f(545,139);
     glEnd();
 
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(515,139);
-    glVertex2f(540,139);
-    glVertex2f(527.5,169);
-    glVertex2f(527.5,169);
+    glVertex2f(535,139);
+    glVertex2f(560,139);
+    glVertex2f(547.5,169);
+    glVertex2f(547.5,169);
     glEnd();
 
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(516,149);
-    glVertex2f(539,149);
-    glVertex2f(527.5,189);
-    glVertex2f(527.5,189);
+    glVertex2f(536,149);
+    glVertex2f(559,149);
+    glVertex2f(547.5,189);
+    glVertex2f(547.5,189);
     glEnd();
 
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(517,159);
-    glVertex2f(538,159);
-    glVertex2f(527.5,209);
-    glVertex2f(527.5,209);
+    glVertex2f(537,159);
+    glVertex2f(558,159);
+    glVertex2f(547.5,209);
+    glVertex2f(547.5,209);
     glEnd();
 
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(517.5,169);
     glVertex2f(537.5,169);
-    glVertex2f(527.5,214);
-    glVertex2f(527.5,214);
+    glVertex2f(557.5,169);
+    glVertex2f(547.5,214);
+    glVertex2f(547.5,214);
     glEnd();
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(518,179);
-    glVertex2f(537,179);
-    glVertex2f(527.5,224);
-    glVertex2f(527.5,224);
+    glVertex2f(538,179);
+    glVertex2f(557,179);
+    glVertex2f(547.5,224);
+    glVertex2f(547.5,224);
     glEnd();
     glBegin(GL_TRIANGLE_FAN);
     glColor3ub(139, 146, 22);
-    glVertex2f(520.5,189);
-    glVertex2f(534.5,187);
-    glVertex2f(527.5,237);
-    glVertex2f(529.5,239);
+    glVertex2f(540.5,189);
+    glVertex2f(554.5,187);
+    glVertex2f(547.5,237);
+    glVertex2f(549.5,239);
     glEnd();
 
     ///Lamp post///
@@ -3752,95 +3823,95 @@ void display ()
 
 
     glColor3ub(0, 153, 51);      ///....tree.........beside 3rd Building........6 ///
-    circle(3,6,555,100);
+    circle(3,6,575,100);
     glColor3ub(0, 153, 51);
-    circle(5,12,550,110);
+    circle(5,12,570,110);
     glColor3ub(0, 153, 51);
-    circle(5,12,560,110);
+    circle(5,12,580,110);
     glColor3ub(0, 153, 51);
-    circle(5,12,565,105);
+    circle(5,12,585,105);
     glColor3ub(0, 153, 51);
-    circle(5,12,545,120);
+    circle(5,12,565,120);
 
 
     glColor3ub(0, 102, 00);
-    circle(5,12,550,122);
+    circle(5,12,570,122);
     glColor3ub(0, 153, 51);
-    circle(5,12,551,122);
+    circle(5,12,571,122);
     glColor3ub(0, 153, 51);
-    circle(5,12,555,140);
+    circle(5,12,575,140);
     glColor3ub(0, 153, 51);
-    circle(4,10,550,135);
+    circle(4,10,570,135);
     glColor3ub(0, 102, 0);
-    circle(4,10,552,133);
+    circle(4,10,572,133);
 
     glColor3ub(0, 153, 51);
-    circle(4,10,553,132);
+    circle(4,10,573,132);
 
     glColor3ub(0, 153, 51);
-    circle(5,12,565,130);
+    circle(5,12,585,130);
     glColor3ub(0, 153, 51);
-    circle(5,12,560,130);
+    circle(5,12,580,130);
     glColor3ub(0, 102, 0);
-    circle(5,12,559,125);
+    circle(5,12,579,125);
     glColor3ub(0, 153, 51);
-    circle(5,12,558,124);
+    circle(5,12,578,124);
     glColor3ub(0, 153, 51);
-    circle(5,12,570,120);
+    circle(5,12,590,120);
     glColor3ub(0, 102, 0);
-    circle(5,12,565,115);
+    circle(5,12,585,115);
     glColor3ub(0, 153, 51);
-    circle(5,12,564,115);
+    circle(5,12,584,115);
     glColor3ub(0, 153, 51);
-    circle(5,12,555,118);
+    circle(5,12,575,118);
     glColor3ub(0, 153, 51);
-    circle(5,12,567,140);
+    circle(5,12,587,140);
 
 
 
     glColor3ub(255, 255, 255);         ///Full..........3rd Building.........comp.
-    circle(1,2,555,118);
+    circle(1,2,575,118);
     glColor3ub(255, 255, 255);
-    circle(1,2,555,138);
+    circle(1,2,575,138);
     glColor3ub(255, 255, 255);
-    circle(1,2,565,138);
+    circle(1,2,585,138);
     glColor3ub(255, 255, 255);
-    circle(1,2,560,127);
+    circle(1,2,580,127);
     glColor3ub(255, 255, 255);
-    circle(1,2,544,118);
+    circle(1,2,564,118);
     glColor3ub(255, 255, 255);
-    circle(1,2.5,550,133);
+    circle(1,2.5,570,133);
     glColor3ub(255, 255, 255);
-    circle(1,1.5,551,109);
+    circle(1,1.5,571,109);
     glColor3ub(255, 255, 255);
-    circle(1,2.5,565,105);
+    circle(1,2.5,585,105);
     glColor3ub(255, 255, 255);
-    circle(1,3,570,118);
+    circle(1,3,590,118);
     glColor3ub(255, 255, 255);
-    circle(1,3,565,120);
+    circle(1,3,585,120);
 
 
     glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 3rd Building........6   ///
     glColor3ub(75,35,5);
-    glVertex2f(560,90);
-    glVertex2f(563,90);
-    glVertex2f(562,100);
-    glVertex2f(557,130);
+    glVertex2f(580,90);
+    glVertex2f(583,90);
+    glVertex2f(582,100);
+    glVertex2f(577,130);
     glEnd();
     glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 3rd Building........6   ///
     glColor3ub(75,35,5);
-    glVertex2f(560,90);
-    glVertex2f(563,90);
-    glVertex2f(559,100);
-    glVertex2f(553,110);
+    glVertex2f(580,90);
+    glVertex2f(583,90);
+    glVertex2f(579,100);
+    glVertex2f(573,110);
     glEnd();
 
     glBegin(GL_TRIANGLE_FAN);  ///tree.........beside 3rd Building........6   ///
     glColor3ub(75,35,5);
-    glVertex2f(559,90);
-    glVertex2f(563,90);
-    glVertex2f(564,110);
-    glVertex2f(567,140);
+    glVertex2f(579,90);
+    glVertex2f(583,90);
+    glVertex2f(584,110);
+    glVertex2f(587,140);
     glEnd();
 
 
@@ -4073,7 +4144,6 @@ void display ()
     glEnd();
 
     glBegin(GL_QUADS);
-    //glColor3ub(102, 255, 102);
     glColor3ub(255, 81, 76);
     glVertex2f(j+10,80);  //.....bus
     glVertex2f(j+90,80);
@@ -4082,7 +4152,6 @@ void display ()
     glEnd();
 
     glBegin(GL_QUADS);
-    //glColor3ub(102, 255, 102);
     glColor3ub(255, 81, 76);
     glVertex2f(j+10,55);  //top..........lowerpart
     glVertex2f(j+92,55);
@@ -4192,7 +4261,7 @@ void display ()
     if(k<= 800)
         k = k + 0.3;
     else
-        k = -50;
+        k = -100;
 
     glBegin(GL_QUADS);
     glColor3ub(43, 58, 139);
@@ -4210,7 +4279,6 @@ void display ()
     glEnd();
 
     glBegin(GL_QUADS);
-    //glColor3ub(102, 255, 102);
     glColor3ub(43, 58, 139);
     glVertex2f(k+10,80);  //.....bus
     glVertex2f(k+90,80);
@@ -4219,7 +4287,6 @@ void display ()
     glEnd();
 
     glBegin(GL_QUADS);
-    //glColor3ub(102, 255, 102);
     glColor3ub(43, 58, 139);
     glVertex2f(k+10,55);  //top..........lowerpart
     glVertex2f(k+92,55);
@@ -4341,6 +4408,5 @@ int main (int argc, char** argv)
     glutCreateWindow("Hitech City");
     myInit();
     glutDisplayFunc(display);
-//glutTimerFunc(25, update, 0);
     glutMainLoop();
 }
