@@ -43,7 +43,7 @@ void display ()
     glColor3ub(255, 255, 147);
     glVertex2f(0,100);
     glVertex2f(800,100);
-    glColor3ub(102, 204, 255);
+    glColor3ub(255, 145, 77);
     glVertex2f(800,800);
     glVertex2f(0,800);
     glEnd();
@@ -2700,7 +2700,7 @@ void display ()
     glRasterPos2i(534,453);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'L');
     ///End//
-    
+
     /// Gedung Fakultas Teknik ////
     glBegin(GL_QUADS);
     glColor3ub(0, 94, 196); //background bawah biru
@@ -2709,7 +2709,7 @@ void display ()
     glVertex2f(450,140);
     glVertex2f(320,140);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255); //depan background bawah putih
     glVertex2f(325,95);
@@ -2717,7 +2717,7 @@ void display ()
     glVertex2f(445,135);
     glVertex2f(325,135);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(125, 147, 143); //background pintu abu
     glVertex2f(360,95);
@@ -2725,7 +2725,7 @@ void display ()
     glVertex2f(410,135);
     glVertex2f(360,135);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(115, 115, 115); //pintu abu tua
     glVertex2f(370,90);
@@ -2733,7 +2733,7 @@ void display ()
     glVertex2f(400,135);
     glVertex2f(370,135);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(217, 217, 217); //jendela bawah kiri
     glVertex2f(330,100);
@@ -2748,7 +2748,7 @@ void display ()
     glVertex2f(340,130);
     glVertex2f(330,130);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(217, 217, 217); //jendela bawah kiri
     glVertex2f(345,100);
@@ -2763,7 +2763,7 @@ void display ()
     glVertex2f(355,130);
     glVertex2f(345,130);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(217, 217, 217); //jendela bawah kanan
     glVertex2f(415,100);
@@ -2793,7 +2793,7 @@ void display ()
     glVertex2f(440,130);
     glVertex2f(430,130);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255); //background atas putih
     glVertex2f(314,140);
@@ -2801,7 +2801,7 @@ void display ()
     glVertex2f(456,520);
     glVertex2f(314,520);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(0, 94, 196); //tengah biru atas
     glVertex2f(366,157);
@@ -2809,7 +2809,7 @@ void display ()
     glVertex2f(404,535);
     glVertex2f(366,535);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(217, 217, 217); //kaca kiri atas
     glVertex2f(320,140);
@@ -2817,7 +2817,7 @@ void display ()
     glVertex2f(360,480);
     glVertex2f(320,480);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(246, 246, 246); //gariskaca kiri atas
     glVertex2f(327,140);
@@ -2839,7 +2839,7 @@ void display ()
     glVertex2f(353,500);
     glVertex2f(350,500);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(217, 217, 217); //kaca kanan atas
     glVertex2f(404,140);
@@ -2847,7 +2847,7 @@ void display ()
     glVertex2f(450,480);
     glVertex2f(404,480);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255); //gariskaca kanan atas
     glVertex2f(415,140);
@@ -2855,7 +2855,7 @@ void display ()
     glVertex2f(420,480);
     glVertex2f(415,480);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(0, 94, 196); //jendela kanan atas biru
     glVertex2f(420,180);
@@ -2877,7 +2877,7 @@ void display ()
     glVertex2f(450,440);
     glVertex2f(420,440);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255); //gariskaca kanan atas
     glVertex2f(434,140);
@@ -2885,7 +2885,7 @@ void display ()
     glVertex2f(437,480);
     glVertex2f(434,480);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255); //rooftop putih
     glVertex2f(420,520);
@@ -2893,7 +2893,7 @@ void display ()
     glVertex2f(456,550);
     glVertex2f(420,550);
     glEnd();
-    
+
     glBegin(GL_QUADS);
     glColor3ub(0, 94, 196); //untuk nama tengah biru
     glVertex2f(355,140);
@@ -2902,23 +2902,18 @@ void display ()
     glVertex2f(355,155);
     glEnd();
 
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(371,141);
+    glColor3ub(255, 255, 255);
+    glRasterPos2i(371,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'T');
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(376,141);
+    glRasterPos2i(376,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'E');
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(381,141);
+    glRasterPos2i(381,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'K');
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(386,141);
+    glRasterPos2i(386,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'N');
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(391,141);
+    glRasterPos2i(391,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'I');
-    glColor3ub(31, 46, 53);
-    glRasterPos2i(396,141);
+    glRasterPos2i(396,142);
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'K');
 
     /// END Gedung Teknik ///
@@ -3215,7 +3210,7 @@ void display ()
 
 
     glColor3ub(64, 64, 64);
-    glRasterPos2i(285,780);
+    glRasterPos2i(315,770);
 
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,'A');
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_10,' ');
@@ -4056,7 +4051,7 @@ void display ()
     glRasterPos2i(j+43,65);
 
     glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'T');
-    glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'J');
+    glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'I');
 
     ///..........B U S...........2
 
@@ -4190,7 +4185,7 @@ void display ()
     glRasterPos2i(k+40,65);
 
     glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'T');
-    glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'J');
+    glutBitmapCharacter(GLUT_BITMAP_9_BY_15,'I');
     glutPostRedisplay();
     glutSwapBuffers();
 
